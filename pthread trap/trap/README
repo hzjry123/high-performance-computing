@@ -1,0 +1,16 @@
+This program implements a trapezoidal approximation method for
+determining the area under a curve (also found in Section 3.2 of the
+book). In this assignment you will be implementing a pthread version of
+this approximation method.
+
+In the sample files provided a serial implemententation is
+provided. You can execute this with multiple threads but the
+approximation will be off because of accessing a shared variable
+incorrectly. This assigned asks you to protect this variable in two
+different ways:
+
+ 1. Busy-Wait
+ 2. Mutex
+
+These protections will add overhead to the program and the point of
+this assigment is to observe the difference.

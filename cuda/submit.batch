@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name="prefix_sum" # Job Name
+#SBATCH --output="prefix_sum.o%j"   # Output and error file name (%j expands to jobID)
+#SBATCH --nodes=1                  # Total number of mpi tasks requested
+#SBATCH --ntasks-per-node=24       # Total number of mpi tasks requested
+#SBATCH --partition=gpu        # Queue (partition) name -- normal, development, etc.
+#SBATCH --gres=gpu:k80:4    #only k80 nodes
+#SBATCH -t 00:05:00      # Run time (hh:mm:ss) - 5 minutes
+#SBATCH -A TG-CIE180002
+
+./prefix_sum

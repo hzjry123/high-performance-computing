@@ -1,0 +1,4 @@
+2000
+Simple MM took 72596 ms
+Serial Strassen MM took 9915 ms
+Parallel Strassen MM took 2452 ms

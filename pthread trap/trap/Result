@@ -1,0 +1,51 @@
+One Thread
+Took 1441 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 962 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333331
+
+
+Busy Waiting
+2 threads Busy Waiting
+Took 638 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 898 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333331
+
+
+50 threads Busy Waiting
+Took 143 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 176 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333315
+
+100 threads Busy Waiting
+Took 287 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 335 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333298
+
+
+Mutex
+2 threads Mutex
+Took 513 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 773 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333331
+
+50 threads Mutex
+Took 81 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 112 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333315
+
+100 threads Mutex
+Took 112 ms
+a:-1.000000	 b:1.000000	 n:1000000000	 actual:0.666667	 approximation:0.666667
+Took 138 ms
+a:0.000000	 b:10.000000	 n:1000000000	 actual:333.333000	 approximation:333.333298
+
+As I created more threads, the accuracy became higher. The time varies.
+
+Q.What impact does having a local sum in the thread have upon the execution time?
+It save a lot time!

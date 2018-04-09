@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name="life"        # Job Name
+#SBATCH --output="life.o%j"      # Output and error file name (%j expands to jobID)
+#SBATCH --nodes=1                # Total number of mpi tasks requested
+#SBATCH --ntasks-per-node=24     # Total number of mpi tasks requested
+#SBATCH --partition=compute      # Queue (partition) name -- normal, development, etc.
+#SBATCH -t 00:05:00      # Run time (hh:mm:ss) - 5 minutes
+#SBATCH -A TG-CIE180002
+
+./life 10 20000

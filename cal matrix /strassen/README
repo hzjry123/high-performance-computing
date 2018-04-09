@@ -1,0 +1,10 @@
+Write a parallel program using Pthreads that implements Strassen’s
+algorithm for matrix multiplication. The algorithm computes the
+multiplication of N × N square matrices C = AB by splitting the
+matrices into a series of N/2xN/2 matrices.
+
+More details can be found here:
+http://people.cs.pitt.edu/~bmills/docs/teaching/cs1645/hw3.pdf
+
+If you want to watch a video that explains this algorithm check this out:
+https://www.youtube.com/watch?v=LOLebQ8nKHA
